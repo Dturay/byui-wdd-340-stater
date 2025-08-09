@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
+  max-width: 676px;
   color: var(--secondary-color);
   font-family: Calibri, sans-serif;
   font-weight: bold;
@@ -153,9 +153,20 @@ footer {
   margin-top: 10px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+    background-image: url("/images/site/small_check.jpg");
+  }
   body {
     min-width: 100vw;
+    background-color: var(--primary-color);
+    margin: 30px 50px 30px 50px;
+    border: 5px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   }
 
   .main-content {
